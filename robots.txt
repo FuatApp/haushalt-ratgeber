@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fuatapp.github.io/haushalt-ratgeber/sitemap.xml
