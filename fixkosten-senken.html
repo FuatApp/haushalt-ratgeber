@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fixkosten senken: der jährliche Rechnungs-Check (2026)</title>
+<meta name="description" content="Fixkosten senken: einmal im Jahr alle Verträge auflisten, auf Monatsbeträge umrechnen, drei Fragen stellen — mit Sparpotenzial-Tabelle und Rechenbeispiel.">
+<style>
+:root{--tinte:#242e34;--petrol:#1d6a5a;--honig:#d9942b;--grau:#6c757a;--hell:#f4f8f6;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--tinte);line-height:1.65;background:#fff}
+main{max-width:720px;margin:0 auto;padding:24px 20px 60px}
+header.site{background:var(--petrol);color:#fff;padding:14px 20px}
+header.site a{color:#fff;text-decoration:none;font-weight:700}
+h1{font-size:1.7rem;line-height:1.25;margin:26px 0 12px}
+h2{font-size:1.25rem;margin:34px 0 10px;color:var(--petrol)}
+p{margin:12px 0}
+.antwort{background:var(--hell);border-left:5px solid var(--petrol);padding:14px 16px;margin:16px 0;font-size:1.05rem}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:.95rem}
+th{background:var(--petrol);color:#fff;text-align:left;padding:8px 10px}
+td{border-bottom:1px solid #dde5e1;padding:8px 10px}
+tr:nth-child(even) td{background:var(--hell)}
+ul,ol{margin:12px 0 12px 22px}
+li{margin:6px 0}
+.cta{display:block;background:var(--honig);color:#fff;text-decoration:none;font-weight:700;
+ text-align:center;padding:14px 18px;border-radius:10px;margin:22px 0}
+.cta small{display:block;font-weight:400;font-size:.85rem;opacity:.92}
+.hinweis{font-size:.85rem;color:var(--grau);margin-top:30px}
+footer{border-top:1px solid #dde5e1;margin-top:40px;padding:18px 20px;text-align:center;font-size:.85rem;color:var(--grau)}
+footer a{color:var(--grau)}
+details{margin:10px 0;border:1px solid #dde5e1;border-radius:8px;padding:10px 14px}
+summary{font-weight:700;cursor:pointer}
+.karte{border:1px solid #dde5e1;border-radius:10px;padding:16px;margin:14px 0}
+.karte a{color:var(--petrol);font-weight:700;text-decoration:none}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Wie oft sollte ich meine Fixkosten prüfen?", "acceptedAnswer": {"@type": "Answer", "text": "Einmal im Jahr komplett — ein fester Termin, an dem alle Verträge auf einer Seite landen. Zusätzlich immer dann, wenn ein Anbieter eine Preiserhöhung ankündigt: Solche Schreiben lösen bei Strom, Gas und Versicherungen in der Regel ein Sonderkündigungsrecht aus, das nur wenige Wochen gilt."}}, {"@type": "Question", "name": "Was bringt mehr: kleine Abos kündigen oder eine große Versicherung wechseln?", "acceptedAnswer": {"@type": "Answer", "text": "Beides, aber in dieser Reihenfolge: Ein gekündigtes Abo wirkt sofort und kostet keine Recherche. Der Wechsel einer großen Position wie Strom, Gas oder Kfz-Versicherung bringt meist mehr Geld, braucht aber Vergleich und einen Stichtag. Drei vergessene Abos zu je 9,99 Euro sind übrigens schon 359,64 Euro im Jahr."}}, {"@type": "Question", "name": "Wie finde ich Abos, die ich längst vergessen habe?", "acceptedAnswer": {"@type": "Answer", "text": "Über die Kontoauszüge der letzten zwölf Monate, nicht aus dem Gedächtnis. Wichtig sind die zwölf Monate, weil Jahresabos sonst durchrutschen. Prüfe zusätzlich die Abo-Übersicht in den App-Stores und die PayPal-Einstellungen, denn dort laufen viele Lastschriften unter einem Sammelnamen, der auf dem Kontoauszug nichts über den Anbieter verrät."}}, {"@type": "Question", "name": "Warum verlängern sich Verträge, obwohl ich gekündigt habe?", "acceptedAnswer": {"@type": "Answer", "text": "Meist wurde die Kündigung zu spät oder ohne Nachweis abgeschickt. Verträge, die seit dem 1. März 2022 geschlossen wurden, verlängern sich nur noch auf unbestimmte Zeit und sind danach mit einem Monat Frist kündbar. Ältere Verträge können sich weiterhin um ein volles Jahr verlängern. Verlasse dich deshalb nie auf das Gedächtnis, sondern auf einen Kalendereintrag zum spätesten Kündigungstag, und hebe die Bestätigung auf."}}, {"@type": "Question", "name": "Was kostet eine übersehene Rechnung wirklich?", "acceptedAnswer": {"@type": "Answer", "text": "Bei einer offenen Rechnung von 300 Euro und einem Monat Verzug kommen typischerweise Mahnkosten von 2,50 bis 5,00 Euro, ein weitergereichtes Rücklastschrift-Entgelt von etwa 3 bis 10 Euro und Verzugszinsen von rund 1,25 bis 2,07 Euro zusammen — in Summe grob 7 bis 17 Euro. Teuer wird erst die Stufe danach: Inkassokosten, Sperrung des Anschlusses samt Wiederanschlussgebühr und im schlimmsten Fall ein negativer Schufa-Eintrag."}}, {"@type": "Question", "name": "Brauche ich für den Rechnungs-Check eine App?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Der Check besteht aus einer einzigen Liste mit Anbieter, Betrag, Rhythmus, Monatswert und Kündigungstermin. Eine Tabelle in Excel oder Google Sheets reicht dafür vollständig, rechnet nachvollziehbar und kostet keine laufende Gebühr. Entscheidend ist nicht das Werkzeug, sondern dass die Liste einmal im Jahr wirklich vollständig ist."}}]}</script>
+</head>
+<body>
+<header class="site"><a href="index.html">Haushalt &amp; Ordnung — der Ratgeber</a></header>
+<main>
+
+<h1>Fixkosten senken: der Rechnungs-Check, der jedes Jahr mehrere hundert Euro bringt</h1>
+<div class="antwort"><b>Kurzantwort:</b> Einmal im Jahr alle laufenden Verträge auf einer
+Seite auflisten, jeden Betrag auf den Monat umrechnen und pro Vertrag drei Fragen
+beantworten: Brauche ich das noch? Zahle ich zu viel? Wann kann ich frühestens kündigen?
+Mehr ist es nicht — und genau daran scheitert es, weil die Liste nie entsteht.</div>
+
+<h2>Warum ausgerechnet die Fixkosten</h2>
+<p>Beim Sparen gilt eine unbequeme Wahrheit: Wer beim Einkaufen spart, muss jede Woche
+neu sparen. Wer einen Vertrag um zehn Euro im Monat verbessert, spart zwölf Monate lang,
+ohne noch einmal daran zu denken. Fixkosten sind die einzige Stelle im Haushalt, an der
+eine einzelne Stunde Arbeit ein Jahr lang weiterwirkt.</p>
+<p>Der Haken: Fixkosten fallen nicht auf. Sie werden abgebucht, nicht bezahlt. Genau
+deshalb braucht es einen Termin, nicht guten Willen.</p>
+
+<h2>Wo typischerweise Geld liegen bleibt</h2>
+<p>Die folgenden Spannen sind Größenordnungen, keine Versprechen. Was tatsächlich
+herauskommt, hängt vom Verbrauch, vom Wohnort und vor allem davon ab, wie alt der
+bestehende Vertrag ist. Wer seit Jahren nichts angefasst hat, liegt eher am oberen Rand;
+wer im letzten Jahr gewechselt hat, findet oft gar nichts mehr.</p>
+<table>
+<tr><th>Posten</th><th>Spanne pro Jahr</th><th>Nächster Schritt</th></tr>
+<tr><td>Strom</td><td>ca. 100–300 €</td><td>Jahresverbrauch in kWh von der letzten Abrechnung ablesen, damit vergleichen. Grundversorgung ist fast immer der teuerste Tarif.</td></tr>
+<tr><td>Gas / Heizung</td><td>ca. 100–400 €</td><td>Wie beim Strom, zusätzlich den Abschlag prüfen: zu hohe Abschläge sind ein zinsloses Darlehen an den Versorger.</td></tr>
+<tr><td>Kfz-Versicherung</td><td>ca. 50–300 €</td><td>Stichtag notieren: Bei Verträgen mit Hauptfälligkeit zum 1. Januar muss die Kündigung bis 30. November vorliegen.</td></tr>
+<tr><td>Handy &amp; Internet</td><td>ca. 60–240 €</td><td>Erst das tatsächlich genutzte Datenvolumen ansehen, dann den Bestandskundenpreis mit dem aktuellen Neukundenpreis desselben Anbieters vergleichen.</td></tr>
+<tr><td>Streaming &amp; sonstige Abos</td><td>ca. 60–300 €</td><td>Zwölf Monate Kontoauszüge durchgehen und jedes Abo einzeln aufschreiben. Was zwei Monate lang nicht genutzt wurde, kommt auf die Streichliste.</td></tr>
+<tr><td>Kontoführung</td><td>ca. 36–150 €</td><td>Monatliche Grundgebühr plus Kartenentgelte plus Gebühren für Bargeldabhebungen zusammenrechnen — der wahre Preis steht selten auf einer Zeile.</td></tr>
+<tr><td>Haftpflicht &amp; Hausrat</td><td>ca. 30–150 €</td><td>Auf Doppelversicherungen prüfen (Partner, Familienmitglieder) und Deckungssummen vergleichen, nicht nur Beiträge.</td></tr>
+</table>
+<p>Wer alle sieben Posten anfasst, landet rechnerisch bei 436 bis 1.840 Euro im Jahr.
+Realistisch ist das nicht — meist trägt nur ein Teil. Aber schon die vier größten Posten
+der Tabelle (Strom, Gas, Kfz-Versicherung, Handy und Internet) liegen in der Mitte ihrer
+Spannen zusammen bei rund 775 Euro im Jahr. Deshalb lohnt der Termin.</p>
+
+<h2>Der Rechenschritt, den fast alle überspringen</h2>
+<p>Verträge sind nicht vergleichbar, solange sie in unterschiedlichen Rhythmen abgerechnet
+werden. Eine Quartalsrechnung über 240 Euro wirkt kleiner als ein Abo für 19,99 Euro im
+Monat — sie ist aber viermal so teuer. Deshalb kommt vor jeder Entscheidung die Umrechnung
+auf den Monat. Beispiel eines ganz normalen Haushalts:</p>
+<table>
+<tr><th>Vertrag</th><th>Rechnung</th><th>Rhythmus</th><th>pro Monat</th><th>pro Jahr</th></tr>
+<tr><td>Kfz-Versicherung</td><td>240,00 €</td><td>vierteljährlich</td><td><b>80,00 €</b></td><td>960,00 €</td></tr>
+<tr><td>Handyvertrag</td><td>19,99 €</td><td>monatlich</td><td><b>19,99 €</b></td><td>239,88 €</td></tr>
+<tr><td>Rundfunkbeitrag</td><td>55,08 €</td><td>vierteljährlich</td><td><b>18,36 €</b></td><td>220,32 €</td></tr>
+<tr><td>Streaming-Abo</td><td>12,99 €</td><td>monatlich</td><td><b>12,99 €</b></td><td>155,88 €</td></tr>
+<tr><td>Hausratversicherung</td><td>132,00 €</td><td>jährlich</td><td><b>11,00 €</b></td><td>132,00 €</td></tr>
+<tr><td>Haftpflichtversicherung</td><td>89,00 €</td><td>jährlich</td><td><b>7,42 €</b></td><td>89,00 €</td></tr>
+<tr><td>Vereinsbeitrag</td><td>60,00 €</td><td>jährlich</td><td><b>5,00 €</b></td><td>60,00 €</td></tr>
+<tr><td>Kontoführung</td><td>4,90 €</td><td>monatlich</td><td><b>4,90 €</b></td><td>58,80 €</td></tr>
+<tr><td><b>Summe</b></td><td></td><td></td><td><b>159,66 €</b></td><td><b>1.915,88 €</b></td></tr>
+</table>
+<p>Zwei Dinge werden hier sofort sichtbar. Erstens: Die Kfz-Versicherung ist mit 80,00 €
+im Monat der mit Abstand größte Posten der Liste — gefühlt ist sie das nie, weil sie nur
+viermal im Jahr auftaucht. Zweitens: Die kleinen Positionen unten summieren sich. Streaming,
+Verein und Kontoführung sind zusammen 22,89 € im Monat oder 274,68 € im Jahr, ohne dass
+irgendjemand sie je als Ausgabe wahrnimmt.</p>
+<p>Der zweite Nutzen der Monatsspalte: Sie sagt, wie viel monatlich zurückgelegt werden
+muss, damit die Jahresrechnung im Herbst keine Überraschung mehr ist. In diesem Beispiel
+sind es 159,66 € — jeden Monat, auch in den Monaten ohne Rechnung.</p>
+
+<h2>Die Reihenfolge: erst messen, dann kündigen, dann wechseln</h2>
+<p>Wer die Reihenfolge dreht, verliert Geld. Der übliche Fehler ist, sofort Preisvergleiche
+zu öffnen und Tarife zu wechseln, bevor überhaupt klar ist, was aktuell gezahlt wird und
+was davon überflüssig ist.</p>
+<ol>
+<li><b>Messen.</b> Zwölf Monate Kontoauszüge durchgehen und jede wiederkehrende Abbuchung
+notieren: Anbieter, Betrag, Rhythmus, Vertragsnummer. Zwölf Monate deshalb, weil Jahresabos
+sonst unsichtbar bleiben. Erst danach steht fest, worüber überhaupt entschieden wird.</li>
+<li><b>Streichen.</b> Alles kündigen, was nicht mehr gebraucht wird. Das wirkt sofort,
+kostet keine Recherche und erspart die Arbeit, für einen überflüssigen Vertrag auch noch
+den besten Preis zu suchen.</li>
+<li><b>Verhandeln.</b> Beim bestehenden Anbieter nach dem aktuellen Neukundenpreis fragen.
+Bei Handy und Internet ist das oft der schnellste Weg, weil Bestandskunden regelmäßig mehr
+zahlen als Neukunden für denselben Tarif.</li>
+<li><b>Wechseln.</b> Erst jetzt vergleichen — und nur da, wo Verhandeln nichts gebracht hat.
+Beim Wechsel gilt: Kündigung erst abschicken, wenn der neue Vertrag bestätigt ist, sonst
+entsteht eine Lücke, die bei Versicherungen richtig teuer werden kann.</li>
+</ol>
+
+<h2>Kündigungsfristen im Blick behalten — das ist der eigentliche Hebel</h2>
+<p>Der teuerste Fehler beim Fixkosten-Check ist nicht der falsche Tarif, sondern der
+verpasste Termin. Verträge verlängern sich still: Niemand fragt nach, niemand erinnert,
+die Abbuchung läuft einfach weiter. Wer im Januar beschließt, die Kfz-Versicherung zu
+wechseln, und im Dezember daran denkt, zahlt ein weiteres volles Jahr.</p>
+<p>Seit dem 1. März 2022 ist die Lage für neu geschlossene Verbraucherverträge deutlich
+besser: Sie verlängern sich nach der Erstlaufzeit nur noch auf unbestimmte Zeit und sind
+dann mit einer Frist von einem Monat kündbar. Für Verträge, die davor abgeschlossen wurden,
+gelten die alten Regeln weiter — dort ist die Verlängerung um zwölf Monate weiterhin
+üblich. Für online geschlossene Dauerverträge gibt es außerdem seit dem 1. Juli 2022 den
+Kündigungsbutton, der die Kündigung ohne Formularsuche möglich macht.</p>
+<p>Praktisch heißt das: Nicht die Kündigungsfrist gehört in den Kalender, sondern der
+<b>letzte mögliche Kündigungstag minus zwei Wochen</b>. Zwei Termine sind Pflicht:</p>
+<ul>
+<li><b>Der Fälligkeitskalender</b> — welche Rechnung kommt in welchem Monat? Er verhindert,
+dass eine Jahresrechnung das Monatsbudget sprengt.</li>
+<li><b>Der Kündigungskalender</b> — bis wann muss welcher Vertrag gekündigt sein? Er
+verhindert die stille Verlängerung.</li>
+</ul>
+<p>Ein Sonderfall gehört extra markiert: Kündigt man wegen einer <b>Preiserhöhung</b>, gibt
+es bei Strom, Gas und vielen Versicherungen ein Sonderkündigungsrecht, das unabhängig von
+der normalen Frist gilt — aber nur für kurze Zeit nach dem Ankündigungsschreiben. Solche
+Briefe sind deshalb keine Werbung, sondern ein Termin.</p>
+
+<h2>Mahngebühren und Rücklastschriften: was eine übersehene Rechnung kostet</h2>
+<p>Fixkosten senken heißt auch, keine unnötigen Kosten obendrauf zu produzieren. Eine
+Rechnung, die untergeht, oder eine Lastschrift, die mangels Deckung zurückgeht, kostet
+nicht nur Ärger:</p>
+<ul>
+<li><b>Mahnkosten:</b> in der Praxis meist 2,50 bis 5,00 Euro je Mahnung. Erstattet werden
+darf nur der tatsächliche Aufwand wie Porto und Material; hohe Pauschalen sind angreifbar.</li>
+<li><b>Rücklastschrift:</b> Die eigene Bank darf für die Nichteinlösung kein Entgelt
+verlangen. Der Gläubiger darf aber das ihm entstandene Entgelt weiterreichen — üblich sind
+etwa 3 bis 10 Euro.</li>
+<li><b>Verzugszinsen:</b> gegenüber Verbrauchern fünf Prozentpunkte über dem Basiszinssatz.
+Bei 300 Euro offener Rechnung und einem Monat Verzug sind das je nach Basiszinssatz rund
+1,25 bis 2,07 Euro.</li>
+</ul>
+<p>Zusammen sind das bei diesem Beispiel grob 7 bis 17 Euro für eine einzige übersehene
+Rechnung. Ärgerlich, aber verkraftbar. Teuer wird die Stufe danach: Inkassokosten, die
+Sperrung des Strom- oder Mobilfunkanschlusses samt Wiederanschlussgebühr und im
+schlimmsten Fall ein negativer Schufa-Eintrag, der jahrelang jeden neuen Vertrag verteuert.
+Genau deshalb ist eine simple Liste mit offenen Rechnungen und Häkchen für „bezahlt“ mehr
+wert, als sie aussieht.</p>
+
+<h2>So läuft der Check in einer Stunde durch</h2>
+<ol>
+<li>Kontoauszüge der letzten zwölf Monate öffnen und jede wiederkehrende Abbuchung in eine
+Zeile schreiben.</li>
+<li>Rhythmus eintragen und jeden Betrag auf den Monat umrechnen — Jahresbetrag geteilt
+durch zwölf, Quartalsbetrag geteilt durch drei.</li>
+<li>Nach Monatsbetrag sortieren. Oben stehen die Verträge, die sich zu bearbeiten lohnen.</li>
+<li>Pro Zeile die drei Fragen beantworten: Brauche ich das noch? Zahle ich zu viel? Wann
+kann ich frühestens kündigen?</li>
+<li>Für jeden Vertrag, der bleibt, den spätesten Kündigungstag in den Kalender eintragen.</li>
+<li>Streichen, verhandeln, wechseln — in dieser Reihenfolge.</li>
+</ol>
+
+<div class="karte">
+<p><b>Fertige Tabellen, wenn du nicht bei null anfangen willst</b> — beide komplett deutsch
+beschriftet, für Excel und Google Sheets, Sofort-Download nach dem Kauf:</p>
+<p>→ <a href="https://budgetsheetco.etsy.com/listing/4554568407">Rechnungen Tracker</a> — der Einstieg für 4,99 $: 12 Rechnungen × 12 Monate, Häkchen für bezahlt ja/nein, offene Beträge und eine Jahresübersicht. Genau das Werkzeug gegen Mahngebühren und vergessene Fälligkeiten.</p>
+<p>→ <a href="https://budgetsheetco.etsy.com/listing/4552422968">Haushaltsbuch Komplett</a> — 10,99 $: mit Fixkosten-Umrechnung auf den Monat, Sparzielen und Jahresübersicht, wenn nicht nur die Rechnungen, sondern der ganze Haushalt mitlaufen soll.</p>
+</div>
+<a class="cta" href="https://budgetsheetco.etsy.com">Alle Vorlagen im Shop ansehen<small>Sofort-Download · Excel &amp; Google Sheets</small></a>
+
+<h2>Häufige Fragen</h2>
+<details><summary>Wie oft sollte ich meine Fixkosten prüfen?</summary><p>Einmal im Jahr komplett — ein fester Termin, an dem alle Verträge auf einer Seite landen. Zusätzlich immer dann, wenn ein Anbieter eine Preiserhöhung ankündigt: Solche Schreiben lösen bei Strom, Gas und Versicherungen in der Regel ein Sonderkündigungsrecht aus, das nur wenige Wochen gilt.</p></details>
+<details><summary>Was bringt mehr: kleine Abos kündigen oder eine große Versicherung wechseln?</summary><p>Beides, aber in dieser Reihenfolge: Ein gekündigtes Abo wirkt sofort und kostet keine Recherche. Der Wechsel einer großen Position wie Strom, Gas oder Kfz-Versicherung bringt meist mehr Geld, braucht aber Vergleich und einen Stichtag. Drei vergessene Abos zu je 9,99 Euro sind übrigens schon 359,64 Euro im Jahr.</p></details>
+<details><summary>Wie finde ich Abos, die ich längst vergessen habe?</summary><p>Über die Kontoauszüge der letzten zwölf Monate, nicht aus dem Gedächtnis. Wichtig sind die zwölf Monate, weil Jahresabos sonst durchrutschen. Prüfe zusätzlich die Abo-Übersicht in den App-Stores und die PayPal-Einstellungen, denn dort laufen viele Lastschriften unter einem Sammelnamen, der auf dem Kontoauszug nichts über den Anbieter verrät.</p></details>
+<details><summary>Warum verlängern sich Verträge, obwohl ich gekündigt habe?</summary><p>Meist wurde die Kündigung zu spät oder ohne Nachweis abgeschickt. Verträge, die seit dem 1. März 2022 geschlossen wurden, verlängern sich nur noch auf unbestimmte Zeit und sind danach mit einem Monat Frist kündbar. Ältere Verträge können sich weiterhin um ein volles Jahr verlängern. Verlasse dich deshalb nie auf das Gedächtnis, sondern auf einen Kalendereintrag zum spätesten Kündigungstag, und hebe die Bestätigung auf.</p></details>
+<details><summary>Was kostet eine übersehene Rechnung wirklich?</summary><p>Bei einer offenen Rechnung von 300 Euro und einem Monat Verzug kommen typischerweise Mahnkosten von 2,50 bis 5,00 Euro, ein weitergereichtes Rücklastschrift-Entgelt von etwa 3 bis 10 Euro und Verzugszinsen von rund 1,25 bis 2,07 Euro zusammen — in Summe grob 7 bis 17 Euro. Teuer wird erst die Stufe danach: Inkassokosten, Sperrung des Anschlusses samt Wiederanschlussgebühr und im schlimmsten Fall ein negativer Schufa-Eintrag.</p></details>
+<details><summary>Brauche ich für den Rechnungs-Check eine App?</summary><p>Nein. Der Check besteht aus einer einzigen Liste mit Anbieter, Betrag, Rhythmus, Monatswert und Kündigungstermin. Eine Tabelle in Excel oder Google Sheets reicht dafür vollständig, rechnet nachvollziehbar und kostet keine laufende Gebühr. Entscheidend ist nicht das Werkzeug, sondern dass die Liste einmal im Jahr wirklich vollständig ist.</p></details>
+
+
+<p class="hinweis">Hinweis: Alle Beträge sind nachgerechnete Beispiele und Größenordnungen,
+keine Zusagen; rechtliche Angaben ersetzen keine Rechtsberatung im Einzelfall.<br>
+Verwandt: <a href="haushaltsbuch-fuehren.html">Haushaltsbuch führen: Anleitung in 5 Schritten</a></p>
+
+</main>
+<footer>
+  <a href="index.html">Start</a> · <a href="impressum.html">Impressum &amp; Datenschutz</a><br>
+  © 2026 — Alle Rechenbeispiele wurden mit Microsoft Excel nachgerechnet.
+</footer>
+</body>
+</html>
